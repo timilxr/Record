@@ -1,0 +1,27 @@
+.p-2{
+	padding: 10px;
+	position: relative;
+	top: 50%;
+	box-shadow: 0px 0px 20px black;
+	color: black;
+	background-color: white;
+}
+.sec{
+	background-color: midnightblue;
+}
+.setting{
+	text-align: center;
+	background-color: dimgrey;
+	position: relative;
+	top: 45%;
+}
+input{
+	box-shadow: 0px 0px 5px black;
+}
+a{
+	color: black;
+}
+body{
+	margin: 0px;
+	background-color: #e9ebee;
+}

@@ -1,0 +1,37 @@
+app-header,.col-md-3{
+	background-color: azure;
+	background-image: url(../../assets/sky-992444_1920.jpg);
+	background-blend-mode: multiply;
+	margin-bottom: 10px;
+}
+.row{
+	padding: 10px 0px 10px 0px;
+	box-shadow: 0px 0px 20px black !important;
+	margin: 0px;
+	background-image: url(../../assets/5a8ef14f391d942e018b4881-750-376.jpg);
+	background-size: cover;
+}
+li{
+	margin: 10px 0px;
+	text-transform: uppercase;
+}
+label{
+	color: white;
+}
+li a:hover{
+	text-decoration: none;
+	font-weight: bolder;
+}
+input,select{
+	box-shadow: 0px 0px 3px black;
+	margin-bottom: 40px;
+	background-color: darkgrey;
+}
+.body{
+	padding: 10px;
+
+}
+.justify-content-center{
+	background-color: midnightblue;
+}
+

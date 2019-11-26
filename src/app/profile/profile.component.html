@@ -1,0 +1,47 @@
+<div class="body">
+<div class="container-fluid">
+<div class="row  back justify-content-center">
+<app-header class="col-md-2 col-lg-2 col-4"></app-header>
+<div class="col-md-5 col-lg-5 col-8">
+<div class="card card-responsive">
+    <img class="card-img-left img-responsive img-thumbnail" src="../../assets/C360_2017-12-09-12-54-11-215.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">User name: {{name}}</h4>
+      <p class="card-text">Email: {{email}}</p>
+      <p class="card-text"> User ID: {{token}}</p>
+      <p class="card-text">Email verified: {{emailVerified}}</p>
+      <button class="btn btn-primary" (click)="edName()">Edit User name</button>
+      <button class="btn btn-primary" (click)="edMail()">Change Email</button>
+      <button class="btn btn-primary" (click)="edPass()">Change Password</button>
+    </div>
+  </div>
+</div>
+<div *ngIf="g != 0" class="col-md-3 col-lg-3 col-12">
+    <form class="p-2">
+        <h2>login</h2>
+        <div *ngIf="g == 3" class="form-group">
+            <input type="name" class="form-control" id="name" [(ngModel)]="dataModel.name" placeholder="Enter new username" name="name">
+            </div>
+        <div *ngIf="g == 1" class="form-group">
+            <input type="email" class="form-control" id="email" [(ngModel)]="dataModel.email" placeholder="Enter email" name="email">
+            </div>
+            <div *ngIf="g == 2" class="form-group">
+                <input type="newpassword" class="form-control" id="newpassword" [(ngModel)]="dataModel.newpassword" placeholder="Enter new password" name="newpassword">
+                </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" [(ngModel)]="dataModel.password" placeholder="Enter current password" name="password">
+                </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-5">
+                <button *ngIf="g == 3" type="submit" class="btn btn-success" (click)="nameChange()" value="submit">Submit</button>
+                <button *ngIf="g == 1" type="submit" class="btn btn-success" (click)="emailChange()" value="submit">Submit</button>
+                <button *ngIf="g == 2" type="submit" class="btn btn-success" (click)="passChange()" value="submit">Submit</button>
+              </div>
+            <div class="col-md-6 col-lg-6 col-7">
+            <a ><small>forgotten password?</small></a></div>
+            </div>
+    </form>
+    </div>
+</div>
+</div>
+</div>

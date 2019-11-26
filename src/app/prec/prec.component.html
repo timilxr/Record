@@ -1,0 +1,42 @@
+<div class="body container-fluid">
+	<div class="justify-content-center">
+		<div class="row justify-content-center">
+			<app-header class="col-md-2 col-lg-2 col-4"></app-header>
+    <div class="form col-md-10 col-lg-8 col-7">
+				<form action="">
+						<div class="form-group">
+						<input type="text" class="form-control" [(ngModel)]="recModel.Surname" placeholder="surname" name="surname" required>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="name" [(ngModel)]="recModel.Name" name="name" required>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="phone" [(ngModel)]="recModel.Phone" name="phone" id="phone">
+						<p id="msg"></p>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="email" [(ngModel)]="recModel.Email" name="email">
+						</div>
+						<div class="form-group">
+							<label for="interest">
+								Please select your interest
+							</label>
+						<select name="" id="" class="form-control" [(ngModel)]="recModel.Interest" name="interest">
+							<option value="smartautos">smartautos</option>
+							<option value="foodhub">foodhub</option>
+							<option value="smartmarket">smartmarket</option>
+							<option value="training">training</option>
+						</select>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="business type" [(ngModel)]="recModel.Business_Type" name="business type">
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" placeholder="business name" [(ngModel)]="recModel.Business_name" name="business name">
+						</div>
+						<button class="btn btn-primary" (click)="Record()">submit</button>
+					</form>
+		</div>
+	</div>
+	</div>
+</div>

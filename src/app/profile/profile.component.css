@@ -1,0 +1,41 @@
+.justify-content-center{
+    background-color: midnightblue;
+}
+.body{
+    background-color: white;
+}
+app-header,.col-md-3{
+    background-color: transparent;
+    background-image: url(../../assets/sky-992444_1920.jpg);
+	background-blend-mode: soft-light;
+	margin-bottom: 10px;
+}
+h4,p,h2,small{
+    color: white;
+}
+.card{
+    background-color: transparent;
+    border-color: dodgerblue;
+    border-width: 2px;
+}
+img{
+    height: 150px !important;
+    width: 50% !important;
+}
+.back{
+    background-image: url(../../assets/5a8ef14f391d942e018b4881-750-376.jpg);
+	background-size: cover;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 0px 0px 20px black !important;
+	margin: 10px;
+}
+.col-12{
+    box-shadow: 0px 0px 20px black !important;
+    margin: 10px;
+    background-color: transparent;
+    border-color: dodgerblue;
+    border-width: 2px;
+}
+.btn-primary,.btn-success{
+    margin: 10px 5px;
+}
